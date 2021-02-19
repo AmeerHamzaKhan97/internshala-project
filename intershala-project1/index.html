@@ -12,7 +12,9 @@
       integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl"
       crossorigin="anonymous"
     />
-
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Crete+Round&display=swap');
+      </style>
     <!-- css page -->
     <link rel="stylesheet" href="./style.css" />
 
@@ -25,15 +27,26 @@
   </head>
   <body>
     <!-- sidebar nav -->
-    <div class="container">
-      <div class="sidebar">
+    <div class="sidebar">
+      <div class="logo">
+        <img src="./logo.PNG">
         <a href="#"><i class="fas fa-search search"></i></a>
-        <a href="#"><i class="fas fa-home"></i></a>
-        <a href="#"><i class="far fa-newspaper"></i></a>
-        <a href="#"><i class="far fa-list-alt"></i></a>
-        <a href="#"><i class="far fa-id-badge"></i></a>
-        <a href="#"><i class="far fa-bell bells"></i></a>
       </div>
+       <div class="main-sidebar">
+         <i class=" homes fas fa-home"></i>
+        <i class="far fa-newspaper"></i>
+        <i class="far fa-list-alt"></i>
+        <i class="far fa-id-badge"></i>
+       </div>
+           <div class="bottom-sidebar">
+            <a href="#"><i class="far fa-bell bells"></i></a>
+            <a href="#"><i class="fas fa-sign-out-alt"></i></a>
+            
+           </div>
+      
+    </div>
+    <div class="full">
+     
 
       <div class="section-1">
         <div class="title">
@@ -42,24 +55,32 @@
           src="https://image.freepik.com/free-psd/young-man-placing-his-hands-hips_1187-6830.jpg"
           alt="person-img"
         />
-        <h1>Hi Mike,</h1>
-        <p>welcome back</p>
+        <div class="intro">
+          <h1 class="t1">Hi Mike,</h1>
+        <p class="t4">Welcome Back</p>
+
         </div>
         
-
-        <h4>Today</h4>
-        <h2 class="dollar">$19,892</h2>
-        <p class="p-1">Account Balance</p>
-
-        <h5 class="dollar">$4,000</h5>
-        <p class="p-1">Year-to-Date Contributions</p>
-
-        <h5 class="dollar">$1,892</h5>
-        <p class="p-1">Total Interest</p> 
+        </div>
+        
+        
+         <div class="sub">
+          <h4 class="t2">Today</h4>
+          
+          <h2 class="dollar">$19,892</h2>
+          <p class="t4">Account Balance</p>
+  
+          <h5 class="dollar">$4,000</h5>
+          <p class="t4" >Year-to-Date Contributions</p>
+  
+          <h5 class="dollar">$1,892</h5>
+          <p class="t4">Total Interest</p>
+         </div>
+         
 
         <div class="dropdown button-1">
           <button
-            class="btn btn-primary dropdown-toggle"
+            class="btn btn-primary dropdown-toggle btn-s"
             type="button"
             data-toggle="dropdown"
           >
@@ -67,63 +88,62 @@
           </button>
         </div>
 
-        <h5 class="sub-2">Recent Transcations</h5>
+        <h5 class="sub-2 t2">Recent Transcations</h5>
 
-        <h6 class="year">2020-08-07</h6>
-        <p class="p-1">Withdrawal Transfer to Bank-XXX11</p>
+        <h6 class="year t4">2020-08-07</h6>
+        <p class="t4">Withdrawal Transfer to Bank-XXX11</p>
 
-        <h6 class="year">2020-07-21</h6>
-        <p class="p-1">Withdrawal Transfer to Bank-XXX11</p>
+        <h6 class="year t4">2020-07-21</h6>
+        <p class="t4">Withdrawal Transfer to Bank-XXX11</p>
         <p></p>
 
-        <h6 class="year">2020-07-16</h6>
-        <p class="p-1">Withdrawal Transfer to Bank-XXX11</p>
+        <h6 class="year t4">2020-07-16</h6>
+        <p class="t4">Withdrawal Transfer to Bank-XXX11</p>
       </div>
 
       <div class="section-2">
-        <h4>Retirement income</h4>
-        <h2>Starting Year 2056</h2>
+        <h4 class="t3">Retirement income</h4>
+        <h2 class="t1-5">Starting Year 2056</h2>
 
         <div class="row dollar-2">
-          <div class="col-sm-4">
-            <h3 class="card-title">$300,000</h3>
-            <p class="card-text">My Goal</p>
-            <hr />
+          <div class="col-sm-4 " >
+            <h3 class="card-title t1-25">$300,000</h3>
+            <p class="card-text t4 bb">My Goal</p>
+             
           </div>
-          <div class="col-sm-4">
-            <h3 class="card-title">59%</h3>
-            <p class="card-text">Goal Achieved</p>
-            <hr />
+          <div class="col-sm-4 ">
+            <h3 class="card-title t1-25">59%</h3>
+            <p class="card-text t4 bb">Goal Achieved</p>
+            
           </div>
 
-          <div class="col-sm-4">
-            <h3 class="card-title">$300</h3>
-            <p class="card-text">Est.Montly Income</p>
-            <hr />
+          <div class="col-sm-4 ">
+            <h3 class="card-title t1-25">$300</h3>
+            <p class="card-text t4 bb">Est.Montly Income</p>
           </div>
         </div>
 
-        <h4>Contributions Overtime</h4>
+        <h4 class="t2">Contributions Overtime</h4>
 
-        <div class="row dollar-2">
-          <div class="col-sm-4">
+        <div class="row" style="width: 100%;">
+          <div class="col-sm-4" style="display: flex;">
             <div class="circle"></div>
-            <h6><span>Employer:</span>K 73,500</h6>
+            <h6 class="t5">Employer:<h6 class="t6">K 73,500</h6></h6>
           </div>
-          <div class="col-sm-4">
+          <div class="col-sm-4" style="display: flex;">
             <div class="circle"></div>
-            <h6><span>Employee:</span>K 52,500</h6>
+            <h6 class="t5">Employee:<h6 class="t6" >K 52,500</h6></h6>
           </div>
-          <div class="col-sm-4">
+          <div class="col-sm-4" style="display: flex;">
             <div class="circle"></div>
-            <h6><span>Total Interest:</span>K 244,313</h6>
+            <h6 class="t5">Total Interest:<h6 class="t5" >K 244,313</h6></h6>
           </div>
         </div>
 
         <canvas id="myChart"></canvas>
 
-        <h4>How to Compare to my peers?</h4>
-        <p>These numbers represent current goal achivement</p>
+        <h4 class="t2">How to Compare to my peers?</h4>
+        <p class="t5">These numbers represent current goal achivement</p>
 
         <div class="dropdown">
           <h6 class="dropdown-toggle" href="#">Age: under 30</h6>
@@ -157,7 +177,7 @@
       </div>
 
       <div class="section-3">
-        <h5>Retirement Strategy</h5>
+        <h5 class="t2">Retirement Strategy</h5>
         <h6>Employee Contribution</h6>
         <div class="progress" style="height: 5px">
           <div
@@ -191,13 +211,15 @@
         5%
 
         <div class="d-grid gap-2 col-6 mx-auto">
-  <button class="btn btn-primary" type="button">update</button>
-      <h6>View help Docs ></h6>
-
-       <h5>Are you considering a <span>Housing Advance?</span></h5>
-       <p>Limited time reduced Interest</p>
-       <h6> Learn More ></h6>
-         
+  <button class="btn btn-primary t4 btn-s" type="button">Update</button>
+      <h6 class="t4">View help Docs ></h6>
+<div class="learn-more">
+       <div  class="t4">Are you considering a </div>
+       <div class="t3 b6">Housing Advance?</div>
+       <div class="t5">Limited time reduced Interest</div>
+       <div class="t4 lm b6"> Learn More &nbsp; ></div>
+</div>
+       
   
 </div>
       </div>
