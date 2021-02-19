@@ -118,8 +118,28 @@ svg circle{
     stroke-width: 8;
     stroke-linecap: round;
     transform: translate(5px,5px);
+    stroke-dashoffset: 50%;
+    transition: stroke-dashoffset 1s linear;
 
 }
+#svg circle {
+    
+    transition: stroke-dashoffset 1s linear;
+    stroke: #666;
+    stroke-width: 1.5em;
+  }
+#svg #bar {
+stroke: #FF9F1E;
+stroke-dashoffset: 50;
+stroke-width: 1.5em;
+}
+/* #circle c1{
+    stroke-dashoffset: 0;
+    transition: stroke-dashoffset 1s linear;
+    stroke: #666;
+    stroke-width: 1em;
+  } */
+
 
 svg circle:nth-child(2){
     stroke-dasharray: 220;
