@@ -1,93 +1,102 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <!-- Bootstrap CSS -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl"
-      crossorigin="anonymous"
-    />
-    <style>
-      @import url('https://fonts.googleapis.com/css2?family=Crete+Round&display=swap');
-      </style>
-    <!-- css page -->
-    <link rel="stylesheet" href="./style.css" />
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!-- chartjs link -->
-    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous" />
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Crete+Round&display=swap');
+  </style>
+  <!-- css page -->
+  <link rel="stylesheet" href="./style.css" />
 
-    <!-- font-awesome icons -->
-    <link rel="stylesheet" href="./css/all.min.css" />
-    <title>p</title>
-  </head>
-  <body>
-    <!-- sidebar nav -->
-    <div class="sidebar">
-      <div class="logo">
-        <img src="./logo.PNG">
-        <a href="#"><i class="fas fa-search search"></i></a>
-      </div>
-       <div class="main-sidebar">
-         <i class=" homes fas fa-home"></i>
-        <i class="far fa-newspaper"></i>
-        <i class="far fa-list-alt"></i>
-        <i class="far fa-id-badge"></i>
-       </div>
-           <div class="bottom-sidebar">
-            <a href="#"><i class="far fa-bell bells"></i></a>
-            <a href="#"><i class="fas fa-sign-out-alt"></i></a>
-            
-           </div>
-      
+  <!-- chartjs link -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+
+  <!-- font-awesome icons -->
+  <link rel="stylesheet" href="./css/all.min.css" />
+  <title>p</title>
+</head>
+
+<body>
+  <!-- sidebar nav -->
+  <div id="t-bell">
+    <i class="far fa-bell bells"></i>
+
+  </div>
+
+  <div class="sidebar">
+    <div class="logo">
+      <img src="./logo.PNG">
+      <i class="fas fa-search search"></i>
     </div>
-    <div class="full">
-     
+    <div class="main-sidebar">
+      <i class=" homes fas fa-home"></i>
+      <i class="far fa-newspaper"></i>
+      <i class="far fa-list-alt"></i>
+      <i class="far fa-id-badge"></i>
+      <i class="fas fa-search search mobile-search "></i>
 
-      <div class="section-1">
-        <div class="title">
-            <img
-          class="img-1"
-          src="https://image.freepik.com/free-psd/young-man-placing-his-hands-hips_1187-6830.jpg"
-          alt="person-img"
-        />
+    </div>
+    <div class="bottom-sidebar">
+      <i class="far fa-bell bells"></i>
+      <i class="fas fa-sign-out-alt"></i>
+
+    </div>
+
+  </div>
+  <div class="full">
+
+
+    <div class="section-1">
+      <div class="title">
+        <img class="img-1" src="https://image.freepik.com/free-psd/young-man-placing-his-hands-hips_1187-6830.jpg"
+          alt="person-img" />
         <div class="intro">
           <h1 class="t1">Hi Mike,</h1>
-        <p class="t4">Welcome Back</p>
+          <p class="t4">Welcome Back</p>
 
         </div>
-        
-        </div>
-        
-        
-         <div class="sub">
-          <h4 class="t2">Today</h4>
-          
-          <h2 class="dollar">$19,892</h2>
-          <p class="t4">Account Balance</p>
-  
-          <h5 class="dollar">$4,000</h5>
-          <p class="t4" >Year-to-Date Contributions</p>
-  
-          <h5 class="dollar">$1,892</h5>
-          <p class="t4">Total Interest</p>
-         </div>
-         
 
-        <div class="dropdown button-1">
-          <button
-            class="btn btn-primary dropdown-toggle btn-s"
-            type="button"
-            data-toggle="dropdown"
-          >
+      </div>
+
+
+      <div class="sub card">
+        <div class="sub1">
+          <div class="today t-full ">
+            <h4 class="t2">Today</h4>
+
+            <h2 class="dollar">$19,892</h2>
+            <p class="t4">Account Balance</p>
+
+
+
+          </div>
+          <div class="year2dt">
+            <h5 class="dollar">$4,000</h5>
+            <p class="t4">Year-to-Date</p>
+          </div>
+          <div class="t-in">
+            <h5 class="dollar">$1,892</h5>
+            <p class="t4">Total Interest</p>
+          </div>
+        </div>
+
+        <div class="dropdown button-1 ">
+          <button class="btn btn-primary  btn-s" type="button">
             I want to
           </button>
         </div>
 
+      </div>
+
+
+      <div class="card">
         <h5 class="sub-2 t2">Recent Transcations</h5>
 
         <h6 class="year t4">2020-08-07</h6>
@@ -99,73 +108,91 @@
 
         <h6 class="year t4">2020-07-16</h6>
         <p class="t4">Withdrawal Transfer to Bank-XXX11</p>
+
       </div>
 
-      <div class="section-2">
-        <h4 class="t3">Retirement income</h4>
-        <h2 class="t1-5">Starting Year 2056</h2>
 
-        <div class="row dollar-2">
-          <div class="col-sm-4 " >
-            <h3 class="card-title t1-25">$300,000</h3>
-            <p class="card-text t4 bb">My Goal</p>
-             
-          </div>
-          <div class="col-sm-4 ">
-            <h3 class="card-title t1-25">59%</h3>
-            <p class="card-text t4 bb">Goal Achieved</p>
-            
-          </div>
+    </div>
 
-          <div class="col-sm-4 ">
-            <h3 class="card-title t1-25">$300</h3>
-            <p class="card-text t4 bb">Est.Montly Income</p>
-          </div>
+    <div class="section-2">
+      <h4 class="t3">Retirement income</h4>
+      <h2 class="t1-5">Starting Year 2056</h2>
+
+      <div class="row dollar-2">
+
+         
+            <div class="col-lg-4 goal ">
+              <h3 class="card-title t1-25">$300,000</h3>
+              <p class="card-text t4 bb">My Goal</p>
+            </div>
+         
+
+          
+            <div class="col-lg-4  ">
+              <h3 class="card-title t1-25">59%</h3>
+              <p class="card-text t4 bb">Goal Achieved</p>
+            </div>
+          
+       
+          
+            <div class="col-lg-4">
+              <h3 class="card-title t1-25">$300</h3>
+              <p class="card-text t4 bb">Est.Montly Income</p>
+            </div>
+          
+        
+      </div>
+    
+
+      <h4 class="t2">Contributions Overtime</h4>
+
+      <div class="row" style="width: 100%;">
+        <div class="col-sm-4 emp1" >
+          <div class="circle"></div>
+          <h6 class="t5">Employer:<h6 class="t6">K 73,500</h6>
+          </h6>
         </div>
-
-        <h4 class="t2">Contributions Overtime</h4>
-
-        <div class="row" style="width: 100%;">
-          <div class="col-sm-4" style="display: flex;">
-            <div class="circle"></div>
-            <h6 class="t5">Employer:<h6 class="t6">K 73,500</h6></h6>
-          </div>
-          <div class="col-sm-4" style="display: flex;">
-            <div class="circle"></div>
-            <h6 class="t5">Employee:<h6 class="t6" >K 52,500</h6></h6>
-          </div>
-          <div class="col-sm-4" style="display: flex;">
-            <div class="circle"></div>
-            <h6 class="t5">Total Interest:<h6 class="t5" >K 244,313</h6></h6>
-          </div>
+        <div class="col-sm-4 emp1" >
+          <div class="circle"></div>
+          <h6 class="t5">Employee:<h6 class="t6">K 52,500</h6>
+          </h6>
         </div>
-
-        <canvas id="myChart"></canvas>
-
-        <h4 class="t2">How to Compare to my peers?</h4>
-        <p class="t5">These numbers represent current goal achivement</p>
-
-        <div class="dropdown">
-          <h6 class="dropdown-toggle" href="#">Age: under 30</h6>
+        <div class="col-sm-4 emp1" >
+          <div class="circle"></div>
+          <h6 class="t5">Total Interest:<h6 class="t5">K 244,313</h6>
+          </h6>
         </div>
+     </div> 
+    
+  
 
-        <div class="dropdown">
-          <h6 class="dropdown-toggle" href="#">Salary: k 20-k 30</h6>
-        </div>
+      <canvas id="myChart"></canvas>
 
-        <div class="dropdown">
-          <h6 class="dropdown-toggle" href="#">Gender: Male</h6>
-        </div>
+      <h4 class="t2">How to Compare to my peers?</h4>
+      <p class="t5">These numbers represent current goal achivement</p>
+
+      <div class="dropdown">
+        <h6 class="dropdown-toggle" href="#">Age: under 30</h6>
+      </div>
+
+      <div class="dropdown">
+        <h6 class="dropdown-toggle" href="#">Salary: k 20-k 30</h6>
+      </div>
+
+      <div class="dropdown">
+        <h6 class="dropdown-toggle" href="#">Gender: Male</h6>
+      </div>
 
         <div class="card">
           <div class="box">
             <div class="percent">
               <svg id="circle">
                 <!-- <circle id="c1" cx="50" cy="50" r="50" stroke-width="20" pathLength="50"></circle> -->
-                <circle r="50" cx="50" cy="50" fill="transparent" stroke-dasharray="565.48" stroke-dashoffset="0" ></circle>
-                <circle id="bar" r="50" cx="50" cy="50" fill="transparent" ></circle>
+                <circle r="50" cx="50" cy="50" fill="transparent" stroke-dasharray="565.48" stroke-dashoffset="0">
+                </circle>
+                <circle id="bar" r="50" cx="50" cy="50" fill="transparent"></circle>
               </svg>
-                <!-- <circle id="c2" cx="50" cy="50" r="50" stroke-width="18"></circle> -->
+              <!-- <circle id="c2" cx="50" cy="50" r="50" stroke-width="18"></circle> -->
               </svg>
               <div class="number">
                 <h4>78<span>%</span></h4>
@@ -174,69 +201,64 @@
             <h3 class="text">Average</h3>
           </div>
         </div>
-      </div>
-
-      <div class="section-3">
-        <h5 class="t2">Retirement Strategy</h5>
-        <h6>Employee Contribution</h6>
-        <div class="progress" style="height: 5px">
-          <div
-            class="progress-bar"
-            role="progressbar"
-            style="width: 40%"
-            aria-valuenow="50"
-            aria-valuemin="0"
-            aria-valuemax="100"
-          ></div>
-        </div>
-        12%
-
-        <h6>Retirement Age</h6>
-        <div class="progress" style="height: 5px">
-          <div
-            class="progress-bar"
-            role="progressbar"
-            style="width: 60%"
-            aria-valuenow="50"
-            aria-valuemin="0"
-            aria-valuemax="100"
-          ></div>
-        </div>
-        65
-
-        <h6>Employer Contribution</h6>
-        8.4%
-
-        <h6>Interset Rate</h6>
-        5%
-
-        <div class="d-grid gap-2 col-6 mx-auto">
-  <button class="btn btn-primary t4 btn-s" type="button">Update</button>
-      <h6 class="t4">View help Docs ></h6>
-<div class="learn-more">
-       <div  class="t4">Are you considering a </div>
-       <div class="t3 b6">Housing Advance?</div>
-       <div class="t5">Limited time reduced Interest</div>
-       <div class="t4 lm b6"> Learn More &nbsp; ></div>
-</div>
-       
+    </div>
   
-</div>
+
+    <div class="section-3">
+      <div class="rs-card">
+
+
+      <h5 class="t2">Retirement Strategy</h5>
+      <h6>Employee Contribution</h6>
+      <div class="progress" style="height: 5px">
+        <div class="progress-bar" role="progressbar" style="width: 40%" aria-valuenow="50" aria-valuemin="0"
+          aria-valuemax="100"></div>
+      </div>
+      12%
+
+      <h6>Retirement Age</h6>
+      <div class="progress" style="height: 5px">
+        <div class="progress-bar" role="progressbar" style="width: 60%" aria-valuenow="50" aria-valuemin="0"
+          aria-valuemax="100"></div>
+      </div>
+      65
+
+      <h6>Employer Contribution</h6>
+      8.4%
+
+      <h6>Interset Rate</h6>
+      5%
+
+      <div class="d-grid gap-2 col-6 mx-auto ">
+        <button class="btn btn-primary t4 btn-s up" type="button">Update</button>
+        <div class="view-doc">
+          <h6 class="t4">View help Docs ></h6>
+        </div>
       </div>
     </div>
+    <div class="learn-more">
+      <div class="t4">Are you considering a </div>
+      <div class="t3 b6">Housing Advance?</div>
+      <div class="t5">Limited time reduced Interest</div>
+      <div class="t4 lm b6"> Learn More &nbsp; ></div>
+    </div>
 
-    <!-- jquery cdn link -->
-     <!-- <script
+
+  </div>
+  <button class="btn btn-primary t4 btn-s up1" type="button">Update</button>
+ 
+
+  <!-- jquery cdn link -->
+  <!-- <script
   src="https://code.jquery.com/jquery-migrate-3.3.2.js"></script>
     <script src="jquery.easypiechart.js"></script> -->
 
-    <!-- Option 1: Bootstrap Bundle with Popper -->
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
-      crossorigin="anonymous"
-    ></script>
-    <!-- js file -->
-    <script src="./main.js"></script>
-  </body>
+  <!-- Option 1: Bootstrap Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
+    crossorigin="anonymous"></script>
+  <!-- js file -->
+  <script src="./main.js"></script>
+</body>
+
 </html>

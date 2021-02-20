@@ -19,6 +19,8 @@ body{
 :root{
     --primary-color:rgba(168,168,168,1);
     --secondary-color:rgb(73, 53, 255);
+    --mobile-break-point:640px;
+    --card-color:rgba(249,249,249,1);
 }
 
 
@@ -87,10 +89,10 @@ display:flex;
     padding:2em 3em 10em 7em;    
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
-    background-color: rgba(249,249,249,1);
+    background-color: var(--card-color);
     flex:1 1 auto;
     position: relative;
-    height: 100%;
+    height: fit-content;
 
 }
 
@@ -101,6 +103,7 @@ display:flex;
 
 #myChart{
     margin-bottom: 2em;
+
 }
 
 /* sidebar css end */
@@ -131,7 +134,7 @@ display:flex;
 
 .sub{
 
-    margin-top: 10%;
+    margin: 10% 0;
 }
 .dollar{
     /* font-size: 1em; */
@@ -173,8 +176,13 @@ p.dollar {
 .t6 {
     font-size: 0.6em;
 }
-.button-1{
-    padding-bottom: 60px;
+.card {
+    background-color: rgba(0,0,0,0);
+    border:0;
+}
+.button-1  .btn::after{
+    content:"▼";
+    font-size: 0.8em;
 }
 .learn-more{
     border-left:1px solid var(--secondary-color);
@@ -190,14 +198,26 @@ p.dollar {
     margin-right:5px;
 }
 .btn-s {
-    padding-top:1em; 
-    padding-bottom:1em;
-    border-radius:1em;
+    padding-top:0.5em; 
+    padding-bottom:0.5em;
+    border-radius:0.6em;
+    width:60%;
+    font-size: 0.75em;
+    letter-spacing: 0.5px;
     background-color:var(--secondary-color);
 }
-.learn-more .lm {
+.learn-more .lm ,.view-doc{
     color:var(--secondary-color);
     padding:1em 0; 
+}
+.rs-card {
+    background-color: rgba(249,249,249,1);
+    margin:2em 0;
+    border-radius: 12px;
+    padding:1em;
+}
+.view-doc {
+    text-align: center  ;
 }
 .b6 {
     font-weight: 600;
@@ -221,6 +241,10 @@ p.dollar {
     padding: 40px 0;
 }
 
+.emp1{
+    display: flex;
+}
+
 .circle{
  width: 15px;
  margin:0 0.1em;
@@ -234,7 +258,7 @@ svg{
     position: relative;
     width: 150px;
     height: 150px;
-    z-index: 1000;
+    z-index: 4;
 }
 
 svg circle{
@@ -278,6 +302,130 @@ svg circle:nth-child(2){
 }
 
 /* sectiom-3 css start */
+.mobile-search {
+    display: none;
+}
+#t-bell{
+    display: none;
+}
+/* media query */
+@media only screen and (max-width: 640px) {
+   .full{
+       flex-direction: column;
+   }
+   #t-bell{
+       z-index: 8;
+       position: fixed;
+       right:1.4em;
+       top:1.4em;
+       display: inline;
+       color: var(--primary-color);
+       font-size: 1.2em;
+   }
+   .logo,.bottom-sidebar {
+       display: none;
+   }
+    
+   .sidebar {
+       height: fit-content;
+       width: 100%;
+       bottom:0;
+       z-index: 5;
+   
 
+   }
+   .section-1{
+       padding: 2em;
+       background-color: white;
+   }
+   .card{
+    background-color: var(--card-color);
+    border-radius: 12px;
+    border:0;
+    height: fit-content;
+    margin:1em 0;
+    padding:1em 0;
+   }
+   .today {
+       padding-left:2.5em;
+   }
+   .center {
+       display: flex;
+       justify-content: center;
+       align-items: center;
+   }
+   .sub1 {
+    display: inline-flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+   }
+   .button-1 {
 
+       display: flex;
+       justify-content: center;
+       align-items: center;
+    }
+    .button-1  .btn::after{
+        content:"..";
+    }
+   .t-full {
+       width:100%;
+   }
+   .year2dt p{
+       content:"Year to Date"
+   }
+   .mobile-search {
+    display: block;
+}
+   
+   .main-sidebar {
+       /* display: none; */
+       flex-direction: row;
+       display: flex;
+       flex-grow: 100%;
+       width: 100%;
+       order:1;
+       justify-content: space-between;
+   }
+  .section-1,.section-2{
+      left:0;
+      margin-left: 0;
+  }
 
+  #my1{
+      width: 100%;
+  }
+  
+  .dollar-2{
+    display: inline-flex;
+    flex-flow: row wrap;
+  }
+  .dollar-2 div {
+      width:fit-content;
+      flex:1;
+  }
+  .dollar-2 .goal {
+    width:100%;
+    flex:auto;
+}
+.emp1{
+    flex-direction: column;
+    width: fit-content;
+    flex: 1;
+}
+.learn-more,.view-doc,.up {
+    display: none;
+}
+.up1 {
+    position: sticky;
+    /* bottom:0; */
+    width:100%;
+    border-radius: 15px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    padding: 1.8em;
+    z-index: 6;
+    top:0;
+}
+
+}
