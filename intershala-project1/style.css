@@ -5,6 +5,7 @@
 }
 
 body{
+    overflow: auto;
     display: flex;
     font-family: 'Crete Round', serif;
     justify-content: center;
@@ -23,20 +24,85 @@ body{
     --card-color:rgba(249,249,249,1);
 }
 
+.dollar,.year,.t1-25,.t6,.t5,.t3,.section-2 span{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.t4,.t5{
+    color: var(--primary-color);
+}
+
+.ret p{
+   color: black;
+ }
+ .ret{
+     
+ }
+ .current{
+     border-bottom: 2px solid rgba(168,168,168,0.2); 
+     
+ }
+ .wd {
+     padding: 0.5em 0.8em;
+ }
+
+.btn-s{
+    color: white;
+}
+
+.dropdown span{
+    color: black;
+}
+.section-2{
+    flex: 3 1 auto;
+    
+    
+}
+.section-2 .t3{
+    color: var(--secondary-color);
+    font-weight: bold;
+}
+.section-3{
+    flex: 1 1 15em;
+    padding-top: 1em;
+    justify-self:end;
+}
+.view-doc h6{
+    color: var(--secondary-color);
+    font-weight: 600;
+}
+    
+
+.dollar-2 h3{
+    font-weight: bolder;
+}
+
+.dollar h2{
+    font-weight: bolder;
+}
 
 
 .full {
     /* margin-left:2em; */
-    /* margin-top:3em; */
-    height:100vh;
+    margin-top:15em;
+    height:fit-content;
 display:flex;
+justify-content: space-between;
+position: relative;
 }
+
+/* #doc{
+    padding-left: 5px;
+} */
 
 
 .navbar{
     display: flex;
     
     
+}
+.sidebar .homes {
+    color:white;
 }
 /* sidebar css start */
 .sidebar i {
@@ -46,6 +112,7 @@ display:flex;
   color: var(--primary-color);
   display: block;
 }
+
 
 
 
@@ -79,35 +146,58 @@ display:flex;
 
 
 .section-1,.section-2{
-    padding:1em;
+    padding:3em;
     position: relative;
-    left:-9em;
-
+    left:-5em;
+    height: fit-content;
     /* padding: 30px 100px 5px 5px; */
 }
 .section-1 {
-    padding:2em 3em 10em 7em;    
+    padding:2em 7em 10em 14em;    
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
     background-color: var(--card-color);
-    flex:1 1 auto;
+   
     position: relative;
     height: fit-content;
+    flex: 1 1 24em;
+    
+    
 
 }
 
-.section-2{
+/* .section-2{
     flex-grow: 2;
     flex: 2 1 auto;
-}
+    
+} */
 
 #myChart{
     margin-bottom: 2em;
+    width:28em !important;
+    height: 15em  !important;
 
 }
-
+.chart {
+    position: relative;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 /* sidebar css end */
-
+.chart p {
+    position: absolute;
+    top:30%;
+}
+.container {
+    display: flex;
+    justify-content: space-between;
+}
+.box h5.t2 {
+    padding-top:5px; 
+    text-align: center;
+}
 
  /* section-1 css start */
 .img-1{
@@ -120,6 +210,7 @@ display:flex;
     display: flex;
     width:100%;
     justify-content: space-between;
+    
 }
 
 .title h1{
@@ -135,6 +226,7 @@ display:flex;
 .sub{
 
     margin: 10% 0;
+    
 }
 .dollar{
     /* font-size: 1em; */
@@ -188,7 +280,11 @@ p.dollar {
     border-left:1px solid var(--secondary-color);
     width: 15em;
     padding-left: 2em;
+    
 } 
+.nowrap {
+    white-space: nowrap;
+  }
 .homes{
     background-color: var(--secondary-color);
     color:white;
@@ -196,6 +292,12 @@ p.dollar {
     padding:0.5em;
     margin-left:5px;
     margin-right:5px;
+}
+.bottomright{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+
 }
 .btn-s {
     padding-top:0.5em; 
@@ -205,6 +307,17 @@ p.dollar {
     font-size: 0.75em;
     letter-spacing: 0.5px;
     background-color:var(--secondary-color);
+}
+.up-div{
+    margin: 1em 0 0 0;
+        display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.up.btn-s{
+    width:80%;
+    font-size: 0.7em;
 }
 .learn-more .lm ,.view-doc{
     color:var(--secondary-color);
@@ -223,7 +336,7 @@ p.dollar {
     font-weight: 600;
 }
 .bb {
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid rgb(73, 53, 255);
 }
 .sub-2{
     padding-bottom: 15px;
@@ -234,16 +347,37 @@ p.dollar {
     top: 1px;
 }
 
+.logo img{
+    padding: 0.3em;
+}
+
 
 /* section-2 css start */
 
 .dollar-2{
     padding: 40px 0;
 }
-
+.selector {
+    padding-right: 3em;
+}
+.current{
+    padding: 0.1em;
+    border-bottom:1.82px solid rgba(3,3,3,0.06);
+}
+.compare{
+    display: flex;
+    flex-direction: column;
+}
+.filter{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
 .emp1{
     display: flex;
 }
+
+
 
 .circle{
  width: 15px;
@@ -254,56 +388,84 @@ p.dollar {
 
 }
 
-svg{
-    position: relative;
-    width: 150px;
-    height: 150px;
-    z-index: 4;
-}
-
-svg circle{
-    width: 100%;
-    height: 100%;
-    fill: none;
-    stroke: aqua;
-    stroke-width: 8;
-    stroke-linecap: round;
-    transform: translate(5px,5px);
-    stroke-dashoffset: 50%;
-    transition: stroke-dashoffset 1s linear;
-
-}
-#svg circle {
-    
-    transition: stroke-dashoffset 1s linear;
-    stroke: #666;
-    stroke-width: 1.5em;
-  }
-#svg #bar {
-stroke: #FF9F1E;
-stroke-dashoffset: 50;
-stroke-width: 1.5em;
-}
-/* #circle c1{
-    stroke-dashoffset: 0;
-    transition: stroke-dashoffset 1s linear;
-    stroke: #666;
-    stroke-width: 1em;
-  } */
 
 
-svg circle:nth-child(2){
-    stroke-dasharray: 220;
-    stroke-dashoffset: 220;
-}
 
-.card:nth-child(1) svg circle:nth-child(2){
-    stroke: blue;
-}
+
 
 /* sectiom-3 css start */
 .mobile-search {
     display: none;
+}
+
+
+
+
+.div-2{
+    font-size: 0.9em;
+    
+
+}
+
+.contri{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 0.8em;
+}
+
+.rate{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+}
+
+.age{
+    margin: 1em 0;
+    border-bottom: 0.5px solid rgba(168,168,168,0.2);
+}
+
+.contri-text{
+    margin: 1em 0;
+}
+
+input[type="range"]{
+    width: 90%;
+    margin-right:1em;
+    
+}
+input[type="text"]{
+    width:1.9em;
+    outline: none;
+    border:none;
+}
+input:focus{
+    outline: none;
+}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: black;
+    opacity: 1; /* Firefox */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+  }
+  
+  :-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: black;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  ::-ms-input-placeholder { /* Microsoft Edge */
+    color: black;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+
+  
+  
+
+.up1{
+    visibility:hidden;
 }
 #t-bell{
     display: none;
@@ -335,8 +497,9 @@ svg circle:nth-child(2){
 
    }
    .section-1{
-       padding: 2em;
+       /* padding: 2em; */
        background-color: white;
+       margin-top: 40px;
    }
    .card{
     background-color: var(--card-color);
@@ -344,10 +507,10 @@ svg circle:nth-child(2){
     border:0;
     height: fit-content;
     margin:1em 0;
-    padding:1em 0;
+    padding:1em;
    }
    .today {
-       padding-left:2.5em;
+       padding-left:2em;
    }
    .center {
        display: flex;
@@ -366,7 +529,10 @@ svg circle:nth-child(2){
        align-items: center;
     }
     .button-1  .btn::after{
-        content:"..";
+        content:"...";
+    }
+    .btn-s{
+        padding:0.9em 3em;
     }
    .t-full {
        width:100%;
@@ -395,10 +561,16 @@ svg circle:nth-child(2){
   #my1{
       width: 100%;
   }
+
+  h2.dollar{
+      font-size: 2em;
+      
+  }
   
   .dollar-2{
     display: inline-flex;
     flex-flow: row wrap;
+    margin: 1em 3em;
   }
   .dollar-2 div {
       width:fit-content;
@@ -426,6 +598,14 @@ svg circle:nth-child(2){
     padding: 1.8em;
     z-index: 6;
     top:0;
+}
+
+.compare {
+    flex-direction: column;
+}
+
+.filter{
+    margin: 1em 3em;
 }
 
 }
