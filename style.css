@@ -153,11 +153,11 @@ position: relative;
     /* padding: 30px 100px 5px 5px; */
 }
 .section-1 {
-    padding:2em 7em 10em 14em;    
+    padding:2em 1em 10em 10em;    
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
     background-color: var(--card-color);
-   
+   margin-left:0;
     position: relative;
     height: fit-content;
     flex: 1 1 24em;
@@ -473,7 +473,8 @@ input:focus{
 /* media query */
 @media only screen and (max-width: 640px) {
    .full{
-       margin-top:80em;
+       margin-top:90em;
+       margin-left:5em;
        flex-direction: column;
        width: 100vw;
    }
@@ -629,7 +630,7 @@ input:focus{
     border-top-right-radius: 0;
     padding: 1.8em;
     z-index: 6;
-    top:0;
+    /* top:0; */
 }
 
 .compare {
