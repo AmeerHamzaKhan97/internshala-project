@@ -474,9 +474,12 @@ input:focus{
 @media only screen and (max-width: 640px) {
    .full{
        margin-top:90em;
-       margin-left:5em;
        flex-direction: column;
        width: 100vw;
+   }
+   .title{
+       
+    margin-left:1em;
    }
    .section-3,.section-1,.section-2 {
        padding:0.2em 1em;
